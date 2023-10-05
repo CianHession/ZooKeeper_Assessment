@@ -1,0 +1,134 @@
+{
+  "tests": [
+    {
+      "name": "Connects Successfully",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#processConnectedTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "Disconnects Successfully",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#processDisconnectedTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "initialise creates /services znode",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#initialiseCreateServicesZnodeTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "initialise creates /services znode with correct mode",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#initialiseCreateServicesZnodeModeTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "initialise doesn't create /services znode if already exists",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#initialiseCreateServicesZnodeAlreadyExistsTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "initialise gets existing services",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#initialiseServiceRegistryGetsExistingServicesTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "New service added to empty cluster test",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#firstNewServiceAddedTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "second new service added test",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#secondNewServiceAddedTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "service removed test",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#serviceRemovedTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "register service creates a znode test",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#registerServiceCreatesZNodeTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "register service creates a znode with correct data test",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#registerServiceCorrectDataTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "register service creates a znode with correct mode test",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#registerServiceCorrectModeTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    },
+    {
+      "name": "service address changes test",
+      "setup": "",
+      "run": "cd service-registry;mvn -q -Dmaven.test.skip=false -DskipTests=false -Dtest=ServiceRegistryTest#serviceAddressChangedTest test",
+      "input": "",
+      "output": "",
+      "comparison": "",
+      "timeout": 2,
+      "points": 5
+    }
+  ]
+}
